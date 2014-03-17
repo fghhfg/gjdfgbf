@@ -1,0 +1,84 @@
+{
+  "id": "25ad7da9996e94e0089d5e8c4bd8bf13",
+  "schema": [
+    "substance-article",
+    "0.3.0"
+  ],
+  "nodes": {
+    "document": {
+      "id": "document",
+      "type": "document",
+      "views": [
+        "content",
+        "figures",
+        "citations"
+      ],
+      "guid": "25ad7da9996e94e0089d5e8c4bd8bf13",
+      "creator": "",
+      "title": "Untitled",
+      "authors": [
+        "contributor_1"
+      ],
+      "abstract": "",
+      "created_at": "2014-03-17T07:49:19.230Z",
+      "updated_at": "2014-03-17T07:57:45.414Z",
+      "published_on": "2014-03-17T07:57:45.412Z"
+    },
+    "cover": {
+      "id": "cover",
+      "type": "cover",
+      "authors": []
+    },
+    "content": {
+      "type": "view",
+      "id": "content",
+      "nodes": [
+        "cover",
+        "text1",
+        "4c03378bfaad549c8f9d0b46e5b5ee3e"
+      ]
+    },
+    "figures": {
+      "type": "view",
+      "id": "figures",
+      "nodes": []
+    },
+    "remarks": {
+      "type": "view",
+      "id": "remarks",
+      "nodes": []
+    },
+    "errors": {
+      "type": "view",
+      "id": "errors",
+      "nodes": []
+    },
+    "info": {
+      "type": "view",
+      "id": "info",
+      "nodes": [
+        "contributor_1"
+      ]
+    },
+    "text1": {
+      "type": "text",
+      "id": "text1",
+      "content": "Start typinghttp://fghhfg.github.com/gjdfgbf/untitled"
+    },
+    "contributor_1": {
+      "type": "contributor",
+      "id": "contributor_1",
+      "name": "John Doe",
+      "role": "author",
+      "organization": "ACME",
+      "image": "",
+      "email": "me@example.com"
+    },
+    "4c03378bfaad549c8f9d0b46e5b5ee3e": {
+      "type": "text",
+      "id": "4c03378bfaad549c8f9d0b46e5b5ee3e",
+      "source_id": "",
+      "content": "Please note: The example files are still being migrated from another site. They are not available at this time. --fumble 18:13, 24 Apr 2005 (PDT)Example 1Please note: The example files are still being migrated from another site. They are not available at this time. --fumble 18:13, 24 Apr 2005 (PDT)Example 1"
+    }
+  }
+}
