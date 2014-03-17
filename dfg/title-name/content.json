@@ -1,0 +1,91 @@
+{
+  "id": "859aac2b5db23b8deff9d883da45f44b",
+  "schema": [
+    "substance-article",
+    "0.3.0"
+  ],
+  "nodes": {
+    "document": {
+      "id": "document",
+      "type": "document",
+      "views": [
+        "content",
+        "figures",
+        "citations"
+      ],
+      "guid": "859aac2b5db23b8deff9d883da45f44b",
+      "creator": "",
+      "title": "title_name",
+      "authors": [
+        "contributor_1"
+      ],
+      "abstract": "",
+      "created_at": "2014-03-17T07:44:58.500Z",
+      "updated_at": "2014-03-17T07:47:33.264Z",
+      "published_on": "2014-03-17T07:47:33.263Z"
+    },
+    "cover": {
+      "id": "cover",
+      "type": "cover",
+      "authors": []
+    },
+    "content": {
+      "type": "view",
+      "id": "content",
+      "nodes": [
+        "cover",
+        "text1",
+        "f467f78f73cfdb00f969cdc38f8f919d",
+        "7619eea36114970cad489ade5500cc83"
+      ]
+    },
+    "figures": {
+      "type": "view",
+      "id": "figures",
+      "nodes": []
+    },
+    "remarks": {
+      "type": "view",
+      "id": "remarks",
+      "nodes": []
+    },
+    "errors": {
+      "type": "view",
+      "id": "errors",
+      "nodes": []
+    },
+    "info": {
+      "type": "view",
+      "id": "info",
+      "nodes": [
+        "contributor_1"
+      ]
+    },
+    "text1": {
+      "type": "text",
+      "id": "text1",
+      "content": "Start typindddgdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    },
+    "contributor_1": {
+      "type": "contributor",
+      "id": "contributor_1",
+      "name": "John Doe",
+      "role": "author",
+      "organization": "ACME",
+      "image": "",
+      "email": "me@example.com"
+    },
+    "f467f78f73cfdb00f969cdc38f8f919d": {
+      "type": "text",
+      "id": "f467f78f73cfdb00f969cdc38f8f919d",
+      "source_id": "",
+      "content": "sdfsfsfsfsfsfsfsfsfs"
+    },
+    "7619eea36114970cad489ade5500cc83": {
+      "type": "text",
+      "id": "7619eea36114970cad489ade5500cc83",
+      "source_id": "",
+      "content": "fdfdfd"
+    }
+  }
+}
