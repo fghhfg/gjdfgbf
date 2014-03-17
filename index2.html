@@ -6,9 +6,13 @@ title: Your New Jekyll Site
 <div id="home">
   <h1>Blog Posts</h1>
   <p>{{ site.baseurl }}</p>
+  <p>-------------</p>
   <p>{{ site.posts }}</p>
+  <p>-------------</p>
   <p>{{ site.pages }}</p>
+  <p>-------------</p>
   <p>{{ site.time }}</p>
+  <p>-------------</p>
   <ul class="posts">
     {% for post in site.posts %}
       <li> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
