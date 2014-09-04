@@ -1,14 +1,20 @@
----
-layout: default
-title: 這是第一個網cmder
----
+<!DOCTYPE html>
+<html>
+<head>
+　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+　<title>{{ page.title }}</title>
+</head>
+<body>
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <p>{{ site.baseurl }}</p>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+  <div id="home">
+    <h1>Blog Posts</h1>
+    <p>{{ site.baseurl }}</p>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</body>
+</html>
