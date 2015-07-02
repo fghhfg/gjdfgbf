@@ -2,37 +2,32 @@
 <head>
     <script type="text/javascript">
 
-        // Wait for the page to load first
-        window.onload = function() {
-
-          //Get a reference to the link on the page
-          // with an id of "mylink"
-          var a = document.getElementById("mylink");
-
-          //Set code to run when the link is clicked
-          // by assigning a function to "onclick"
-          a.onclick = function() {
-
-            // Your code here...
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            }
-
-            function showPosition(position) {
-            	var my_latlon = position.coords.latitude + "," + position.coords.longitude;
-            var direction = "https://www.google.com/maps?saddr=" + my_latlon + "&daddr=25.0140447,121.419638";
-            	location = direction;
-            }
-
-            //If you don't want the link to actually 
-            // redirect the browser to another page,
-            // "google.com" in our example here, then
-            // return false at the end of this block.
-            // Note that this also prevents event bubbling,
-            // which is probably what we want here, but won't 
-            // always be the case.
-            return false;
-          }
+        //Get a reference to the link on the page
+        // with an id of "mylink"
+        
+        //Set code to run when the link is clicked
+        // by assigning a function to "onclick"
+        document.getElementById("mylink").onclick = function() {
+        
+        // Your code here...
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        
+        function showPosition(position) {
+        	var my_latlon = position.coords.latitude + "," + position.coords.longitude;
+        var direction = "https://www.google.com/maps?saddr=" + my_latlon + "&daddr=25.0140447,121.419638";
+        	location = direction;
+        }
+        
+        //If you don't want the link to actually 
+        // redirect the browser to another page,
+        // "google.com" in our example here, then
+        // return false at the end of this block.
+        // Note that this also prevents event bubbling,
+        // which is probably what we want here, but won't 
+        // always be the case.
+        return false;
         }
     </script>
 </head>
