@@ -17,7 +17,7 @@
         function showPosition(position) {
         	var my_latlon = position.coords.latitude + "," + position.coords.longitude;
             var direction = "https://www.google.com/maps?saddr=" + my_latlon + "&daddr=25.0140447,121.419638";
-        	location = direction;
+        	document.location = direction;
         }
         
         //If you don't want the link to actually 
