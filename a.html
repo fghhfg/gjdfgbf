@@ -71,11 +71,16 @@ li {list-style-type: none;}
 
 h1 {float: left}
 nav a {
-    float: right;
+    float: left;
     width: 20%;
     margin: 0 1.7%;
     padding: 25px 2%;
     margin-bottom: 0;
+}
+
+nav {
+        float: right;
+        width: 60%;
 }
 
 }
@@ -109,20 +114,20 @@ nav a {
 
 <body>
 
-<header>
+<header class="clearfix">
   <h1>title</h1>
   
-  <nav>
-      <ul class="clearfix">
+  <nav class="clearfix">
+      <ul>
           <li><a href="#">service1</a></li>
           <li><a href="#">service2</a></li>
           <li><a href="#">contact</a></li>
       </ul>
   </nav>
   
-  <div>introduce</div>
 </header>
 
+<div>introduce</div>
 <div>
   <h2>service</h2>
   <h2>1. service</h2>sdfsdfdfsdfsdf
