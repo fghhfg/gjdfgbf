@@ -34,14 +34,6 @@ nav a {
     background: #64363c;
 }
 
-nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0;
-}
-
 nav li:first-child a {
     margin-left: 0;
 }
@@ -76,6 +68,16 @@ li {list-style-type: none;}
 .film img {
   width: 150px;
 }
+
+h1 {float: left}
+nav a {
+    float: right;
+    width: 20%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+}
+
 }
 
 /* <480 */
@@ -84,21 +86,43 @@ li {list-style-type: none;}
   width: 100%;
 }
 }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+} 
+
 </style>
 </head>
 
 <body>
-<h1>title</h1>
 
-<nav>
-    <ul>
-        <li><a href="#">service1</a></li>
-        <li><a href="#">service2</a></li>
-        <li><a href="#">contact</a></li>
-    </ul>
-</nav>
+<header>
+  <h1>title</h1>
+  
+  <nav>
+      <ul class="clearfix">
+          <li><a href="#">service1</a></li>
+          <li><a href="#">service2</a></li>
+          <li><a href="#">contact</a></li>
+      </ul>
+  </nav>
+  
+  <div>introduce</div>
+</header>
 
-<div>introduce</div>
 <div>
   <h2>service</h2>
   <h2>1. service</h2>sdfsdfdfsdfsdf
