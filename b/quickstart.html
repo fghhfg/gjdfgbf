@@ -55,7 +55,7 @@
       if (pickerApiLoaded && oauthToken) {
         var view = new google.picker.View(google.picker.ViewId.DOCS);
         //view.setMimeTypes("image/png,image/jpeg,image/jpg");
-        //view.setMimeTypes("plain");
+        //view.setMimeTypes("plain"); //error
         view.setMimeTypes("text/plain");
         var picker = new google.picker.PickerBuilder()
             .enableFeature(google.picker.Feature.NAV_HIDDEN)
