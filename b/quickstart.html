@@ -47,7 +47,9 @@
 
     // Create and render a Picker object for searching images.
     function createPicker() {
+      console.log('createPicker');
       if (pickerApiLoaded && oauthToken) {
+        console.log('1');
         var view = new google.picker.View(google.picker.ViewId.DOCS);
         //view.setMimeTypes("image/png,image/jpeg,image/jpg");
         //view.setMimeTypes("plain"); //error
@@ -63,7 +65,7 @@
             
             .build();
          picker.setVisible(true);
-         console.log('createPicker');
+         
       }
     }
 
