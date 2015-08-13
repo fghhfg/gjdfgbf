@@ -25,7 +25,6 @@
     // Use the Google API Loader script to load the google.picker script.
     function loadPicker() {
       gapi.load('auth', {'callback': onAuthApiLoad});
-      gapi.load('picker', {'callback': onPickerApiLoad});
     }
 
     function onAuthApiLoad() {
@@ -36,11 +35,6 @@
             'immediate': false
           },
           handleAuthResult);
-    }
-
-    function onPickerApiLoad() {
-      pickerApiLoaded = true;
-      createPicker();
     }
 
     function handleAuthResult(authResult) {
