@@ -60,9 +60,10 @@
             .addView(view)
             .addView(new google.picker.DocsUploadView())
             .setDeveloperKey(developerKey)
-            .setCallback(pickerCallback)
+            
             .build();
          picker.setVisible(true);
+         console.log('createPicker');
       }
     }
 
