@@ -26,6 +26,7 @@
     function loadPicker() {
       gapi.load('auth', {'callback': onAuthApiLoad});
       gapi.load('picker', {'callback': onPickerApiLoad});
+      gapi.client.load('drive', 'v2');
     }
 
     function onAuthApiLoad() {
